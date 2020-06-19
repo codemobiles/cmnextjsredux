@@ -6,10 +6,10 @@ export const setLoginReducer = (payload) => ({
 })
 
 
-export const login({username, password}:Account)=>{
+export const login = ({username, password}:Account)=>{
     return dispatch=>{
         setTimeout(()=>{
-            dispatch(setLoginReducer({username,token: "1234"}))
+            dispatch(setLoginReducer({token: "1234", user:{username}}))
         })
     }
 }
