@@ -1,0 +1,1 @@
+yarn add next-redux-wrapper react-redux redux redux-thunk
